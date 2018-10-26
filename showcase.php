@@ -3,7 +3,11 @@
 
 require_once("business/Service.php")
 
-$langSvc = new LanguageService();
+$navSvc = new NavigationService();
+$aboutSvc = new AboutService();
+$skillsSvc = new SkillsService();
+$persSvc = new PersonalService();
+$contactSvc = new ContactService();
 
 if(isset($_GET)) {
     $lang = $_GET["language"];
@@ -24,21 +28,19 @@ else {
     $lang = 1;
 }
 
-$navigationText = $langSvc->getText('navigation', $lang);
+$navList = $navSvc->getNavList($lang);
+$aboutList = $aboutSvc->getAboutList($lang);
+$personalList = $persSvc->getPersonalList($lang);
+$contactList = $contactSvc->getContactList($lang);
 
-$aboutTitle = $langSvc->getTitle('about', $lang);
-$aboutText = $langSvc->getText('about', $lang);
-$aboutButton = $langSvc->getButton('about', $lang);
-
-$skillsTitle = $langSvc->getTitle('skills', $lang);
-
-$personalTitle = $langSvc->getTitle('personal', $lang);
-$personalText = $langSvc->getText('personal', $lang);
-
-//$subTitles = $langSvc->get;
-
+$skillsTitle = $skillsSvc->getSkills("title", $lang);
+$skillsSubTitles = $skillsSvc->getSkills("subtitle", $lang);
+$skillsLangList = $skillsSvc->getSkills("languagelist", $lang);
+$skillsCodeList = $skillsSvc->getSkills("codinglist", $lang);
+$skillsAcadList = $skillsSvc->getSkills("academiclist", $lang);
+$skillsExtraList = $skillsSvc->getSkills("extralist", $lang);
 
 
-$return_arr[] = array("navigation"("text"=>$navigationText), "about"("title"=>$aboutTitle, "text"=>$aboutText, "button"=>$aboutButton), "skills"("title"=>$skillsTitle), "personal"("title"=>$personalTitle, "text"=>$personalText));
+$return_arr[] = array();
 
 echo json_encode($return_arr);
