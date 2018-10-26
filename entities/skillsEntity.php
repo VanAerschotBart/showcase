@@ -11,17 +11,13 @@ class Skills {
         $this->type = $type;
     }
     
-    public static function create($text, $type) {
-        $skills = new Skills($text, $type);
+    public static function create($text) {
+        $skills = new Skills($text);
         return $skills;
     }
     
     public funtion getText() {
         return $this->text;
-    }
-    
-    public funtion getType() {
-        return $this->type;
     }
     
 }

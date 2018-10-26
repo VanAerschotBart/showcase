@@ -1,31 +1,30 @@
 <?php
-//data/personalDAO.php
+//data/skillsDAO.php
 
 require_once("DBConfig.php");
-require_once("entities/personalDAO.php");
+require_once("entities/skillsDAO.php");
 
-class personalDAO {
+class skillsDAO {
     
-    public function getPersonal($lang) {
+    public function getSkills($type, $lang) {
         
-        $query = "SELECT title, text FROM personal WHERE language = :lang";
+        $query = "SELECT text FROM skills WHERE type = :title AND language = :lang";
         
         $dbh = new PDO(DBConfig::$DB_CONNSTRING, DBConfig::$DB_USERNAME, DBConfig::$DB_PASSWORD);
         
         $stmt = $dbh->prepare($query);
-        $stmt->execute([':lang' => $lang]);
+        $stmt->execute([':type' => $type, ':lang' => $lang]);
         
-        $pers = null;
+        $skills = null;
         
         if ($stmt->rowCount() > 0) {
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            $nav = entities/personalEntity::create(
-                $row["title"],
+            $nav = entities/skillsEntity::create(
                 $row["text"]
             );
         }
         
-        return $pers;
+        return $skills;
         
     }
     

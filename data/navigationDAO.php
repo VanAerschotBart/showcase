@@ -2,7 +2,7 @@
 //data/navigationDAO.php
 
 require_once("DBConfig.php");
-require_once("entities/navigationEntity.php");
+require_once("entities/navigationDAO.php");
 
 class navigationDAO {
     
