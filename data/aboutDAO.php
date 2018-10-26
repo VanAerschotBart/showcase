@@ -2,7 +2,7 @@
 //data/aboutDAO.php
 
 require_once("DBConfig.php");
-require_once("entities/aboutDAO.php");
+require_once("entities/aboutEntity.php");
 
 class aboutDAO {
     

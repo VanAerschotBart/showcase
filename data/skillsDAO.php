@@ -2,7 +2,7 @@
 //data/skillsDAO.php
 
 require_once("DBConfig.php");
-require_once("entities/skillsDAO.php");
+require_once("entities/skillsEntity.php");
 
 class skillsDAO {
     
