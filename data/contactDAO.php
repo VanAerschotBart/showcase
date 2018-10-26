@@ -4,7 +4,7 @@
 require_once("DBConfig.php");
 require_once("entities/contactEntity.php");
 
-class contactDAO {
+class ContactDAO {
     
     public function getContact($lang) {
         

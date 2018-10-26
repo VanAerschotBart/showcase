@@ -4,7 +4,7 @@
 require_once("DBConfig.php");
 require_once("entities/aboutEntity.php");
 
-class aboutDAO {
+class AboutDAO {
     
     public function getAbout($lang) {
         

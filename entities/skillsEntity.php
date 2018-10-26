@@ -4,11 +4,9 @@
 class Skills {
     
     private $text;
-    private $type;
         
     public function __construct($text, $type) {
         $this->text = $text;
-        $this->type = $type;
     }
     
     public static function create($text) {

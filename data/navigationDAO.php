@@ -4,7 +4,7 @@
 require_once("DBConfig.php");
 require_once("entities/navigationEntity.php");
 
-class navigationDAO {
+class NavigationDAO {
     
     public function getNav($lang) {
         

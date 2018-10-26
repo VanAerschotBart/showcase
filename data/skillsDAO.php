@@ -4,7 +4,7 @@
 require_once("DBConfig.php");
 require_once("entities/skillsEntity.php");
 
-class skillsDAO {
+class SkillsDAO {
     
     public function getSkills($type, $lang) {
         

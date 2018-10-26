@@ -4,7 +4,7 @@
 require_once("DBConfig.php");
 require_once("entities/personalEntity.php");
 
-class personalDAO {
+class PersonalDAO {
     
     public function getPersonal($lang) {
         
