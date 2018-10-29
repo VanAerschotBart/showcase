@@ -40,7 +40,7 @@
                         <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#extra">Extra Info</a>
+                        <a class="nav-link js-scroll-trigger" href="#personal">Personal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -73,7 +73,7 @@
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-heading text-white">Hello there!</h2>
                     <hr class="light my-4">
-                    <p class="text-faded mb-4" id="about">As you may have noticed above, my name is Van Aerschot Bart, and I'm a junior web-developer. As I'm just starting my professional carreer in this branche, you probably never heard of me before. Well, here's a chance to change that! A short introduction: I'm 34 years old, father to a 7 year old daughter (my pride and joy!) living in Opglabbeek, Limburg. My main language in coding is PHP, but I also have a little crush on JavaScript. To be honest, I enjoy almost every aspect of building a website in it's full, and when my knowledge of a language is a little short, I see it as a challenge and an opportunity to learn! I master most of what I need to know to create a beautiful fully-working website but I'm looking for a company who wants to help me fine-tune and upgrade my skills. At first so I can keep growing and improving, and secondly, that one day, I can be the one helping and teaching new colleagues to become better than they ever could have dreamed of.
+                    <p class="text-faded mb-4">As you may have noticed above, my name is Van Aerschot Bart, and I'm a junior web-developer. As I'm just starting my professional carreer in this branche, you probably never heard of me before. Well, here's a chance to change that! A short introduction: I'm 34 years old, father to a 7 year old daughter (my pride and joy!) living in Opglabbeek, Limburg. My main language in coding is PHP, but I also have a little crush on JavaScript. To be honest, I enjoy almost every aspect of building a website in it's full, and when my knowledge of a language is a little short, I see it as a challenge and an opportunity to learn! I master most of what I need to know to create a beautiful fully-working website but I'm looking for a company who wants to help me fine-tune and upgrade my skills. At first so I can keep growing and improving, and secondly, that one day, I can be the one helping and teaching new colleagues to become better than they ever could have dreamed of.
                     </p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#extra">Get to know me better!</a>
                 </div>
@@ -202,7 +202,7 @@
         </div>
     </section>
 
-    <section class="p-0" id="">
+    <section class="p-0" id="gallery">
         <div class="container-fluid p-0">
             <div class="row no-gutters popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -300,13 +300,13 @@
     </section>
     
 
-    <section class="bg-dark text-white" id="extra">
+    <section class="bg-dark text-white" id="personal">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-heading text-white">Extra info</h2>
                     <hr class="light my-4">
-                    <p class="text-faded mb-4" id="extra">
+                    <p class="text-faded mb-4">
                         As you could have guessed, there is more to me besides programming and enjoying time with my daughter in the weekends. First of all I'm a very social guy who'd rather go see new things or visiting friends than sitting at home. That's why I loved my time at KAJ Louwel, a local youth club, where I also had a first experience at leadership when I became 18. But since I know that I can't go out and bother my friends every single night, I picked up some hobbies. One of them is reading a good book, especially a thriller with a bit horror mixed into it can make me forget everything around me for a couple of hours. And a nice walk in nature does the opposite for me, taking a little break every 10 minutes to really soak up the enviroment around me can charge my battery faster than anything else! My love for nature extends to all animals big and small (exept for mosquitoes and wasps of course) and it also makes me aware of the fragility of our eco-system so in this line, I try to recycle and reduce my ecological footprint as much as possible. In the end, I guess, I'm a pretty normal person who likes his own things and lets others enjoy theirs but is always open to something new to discover. And as a token of appreciation for taking the time to read what I wrote, I present you one of my favourite qoutes.
                     </p>
                     <i>    
@@ -368,6 +368,42 @@
 
     <!-- Custom scripts for this template -->
     <script src="../startbootstrap-creative-gh-pages/js/creative.min.js"></script>
+    
+    <script>
+    
+        $(document).ready(function() {
+            
+            var sections = document.getElementsByClassName("sections");
+            var sectionsLength = sections.length;
+            
+            for(i=0, 1 < sectionsLength; i++) {
+                
+                var id = sections[i].att("id");
+                
+                if(id=="mainNav") {
+                    var id = "navigation";
+                }
+                
+                function translate(section, language) {
+                
+                    $.ajax({
+                        url: "",
+                        data: {
+                            'lang': language,
+                            'sect': section
+                        },
+                        dataType: "JSON"
+                    }).done(function() {
+                        document.getElementById(section[i]+"Title") = "";
+                    });
+                
+                }
+                
+            }
+            
+            
+    
+    </script>
 
   </body>
 
