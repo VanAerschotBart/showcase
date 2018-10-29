@@ -12,8 +12,8 @@ class Contact {
     }
     
     public static function create($title, $text) {
-        $pers = new Contact($title, $text);
-        return $pers;
+        $contact = new Contact($title, $text);
+        return $contact;
     }
     
     public funtion getTitle() {
