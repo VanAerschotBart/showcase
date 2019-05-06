@@ -379,10 +379,13 @@
     
         $(document).ready(function() {
             
+            var navbar = document.getElementById("mainNav");
             var transButton = document.createElement("button");
             transButton.setAttribute("id", "translate");
+            transButton.setAttribute("class", "btn-primary btn-xs");
+            transButton.innerHTML = "Translate";
             transButton.addEventListener("click", translate);
-            document.getElementById("").appendChild(transButton);
+            navbar.appendChild(transButton, navbar);
                 
         });
     
