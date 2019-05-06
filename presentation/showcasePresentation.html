@@ -20,6 +20,15 @@
 
     <!-- Custom styles for this template -->
     <link href="../startbootstrap-creative-gh-pages/css/creative.min.css" rel="stylesheet">
+    
+    <style>
+        .flag {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
 
 </head>
 <body id="page-top">
@@ -208,10 +217,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    SCRUM-project
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Vinder
                                 </div>
                             </div>
                         </div>
@@ -381,12 +390,15 @@
             
             var navbar = document.getElementById("mainNav");
             var transButton = document.createElement("button");
+            transButton.setAttribute("style", "background: url(https://lipis.github.io/flag-icon-css/flags/4x3/nl.svg)");
             transButton.setAttribute("id", "translate");
-            transButton.setAttribute("class", "btn-primary btn-xs");
-            transButton.innerHTML = "Translate";
+            transButton.setAttribute("class", "btn btn-light btn-xs js-scroll-trigger");
+            transButton.innerHTML = "NL";
             transButton.addEventListener("click", translate);
             navbar.appendChild(transButton, navbar);
-                
+            
+            
+            //transButton.setAttribute("style", "background: url(https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg)");
         });
     
     </script>
