@@ -9,7 +9,7 @@ $skillsSvc = new SkillsService();
 $persSvc = new PersonalService();
 $contactSvc = new ContactService();
 
-if(isset($_GET)) {
+if(isset($_GET["language"])) {
     $lang = $_GET["language"];
     if ($lang == "EN" || $lang == "NL") {
         if ($lang = "EN") {
