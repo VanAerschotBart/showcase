@@ -382,23 +382,36 @@
     
     <script>
         
-        function translate() {
-            
+        var lang = "EN";
+        
+        function translate(transButton) {
+                
+                if(lang == "EN") {
+                    var transButton = document.getElementById("translate");
+                    transButton.setAttribute("style", "background: url(../startbootstrap-creative-gh-pages/img/uk.png); background-size: cover;");
+                    transButton.innerHTML = "EN";
+                    lang = "NL";
+                    return lang;
+                }
+                else {
+                    location.reload();   
+                }
+                
         }
     
         $(document).ready(function() {
             
             var navbar = document.getElementById("mainNav");
             var transButton = document.createElement("button");
-            transButton.setAttribute("style", "background: url(https://lipis.github.io/flag-icon-css/flags/4x3/nl.svg)");
-            transButton.setAttribute("id", "translate");
             transButton.setAttribute("class", "btn btn-light btn-xs js-scroll-trigger");
+            transButton.setAttribute("style", "background: url(../startbootstrap-creative-gh-pages/img/nl.png); background-size: cover;");
+            transButton.setAttribute("id", "translate");
             transButton.innerHTML = "NL";
             transButton.addEventListener("click", translate);
             navbar.appendChild(transButton, navbar);
             
             
-            //transButton.setAttribute("style", "background: url(https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg)");
+            //transButton.setAttribute("style", "background: url(../startbootstrap-creative-gh-pages/img/uk.png); background-size: cover;");
         });
     
     </script>
