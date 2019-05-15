@@ -25,14 +25,14 @@
     <link href="../startbootstrap-creative-gh-pages/css/custom.css" rel="stylesheet">
     
     <!-- JSON link (translations) -->
-    <script src="../translationNL.json"></script>
-    <script src="../translationEN.json"></script>
+    <script src="../translationNL.js"></script>
+    <script src="../translationEN.js"></script>
 
 </head>
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transCon" id="mainNav">
         <div class="container" id="navContainer">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Top</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -71,7 +71,7 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary transCon">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section class="transCon">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    <section class="p-0" id="gallery">
+    <section class="p-0 transCon">
         <div class="container-fluid p-0">
             <div class="row no-gutters popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -303,7 +303,7 @@
         </div>
     </section>
     
-    <section class="bg-dark text-white" id="personal">
+    <section class="bg-dark text-white transCon">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -320,7 +320,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section class="transCon">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -385,36 +385,37 @@
         function translator3000() {
             
             var transButton = document.getElementById("myButton");
-            var navList = document.getElementById("mainNav").getElementsByClassName("translate");
-            var about = document.getElementById("about").getElementsByClassName("translate");
+            var transConList = document.getElementsByClassName("transCon");
                 
             if(lang == "EN") {
                 transButton.className = "langBtn UK";
                 lang = "NL";
                 
-                //navigation
-                for(a=0; a<navList.length; a++) {
-                    navList[a].innerHTML = translationNL.mainNav[a];
+                //
+                //
+                for(var a=0; a<transConList.length; a++) {
+                    
+                    var transList = transConList[a].getElementsByClassName("translate");
+                    
+                    for(var b = 0; b<transList.length; b++) {
+                        transList[b].innerHTML =  translationNL[a][b];
+                    }
+                    
                 }
-                
-                //about
-                for(b=0; b<about.length; b++) {
-                    about[b].innerHTML = translationNL.about[b];
-                }
-                
             }
             else if(lang =="NL") {
                 transButton.className = "langBtn NL";
                 lang = "EN";
                 
-                //navigation
-                for(a=0; a<navList.length; a++) {
-                    navList[a].innerHTML = translationEN.mainNav[a];
-                }
-                
-                //about
-                for(b=0; b<about.length; b++) {
-                    about[b].innerHTML = translationEN.about[b];
+                //
+                for(var a=0; a<transConList.length; a++) {
+                    
+                    var transList = transConList[a].getElementsByClassName("translate");
+                    
+                    for(var b = 0; b<transList.length; b++) {
+                        transList[b].innerHTML =  translationEN[a][b];
+                    }
+                    
                 }
                 
             }
