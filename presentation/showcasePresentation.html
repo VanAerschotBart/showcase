@@ -23,6 +23,10 @@
     
     <!-- Custom CSS (translate button) -->
     <link href="../startbootstrap-creative-gh-pages/css/custom.css" rel="stylesheet">
+    
+    <!-- JSON link (translations) -->
+    <script src="../translationNL.json"></script>
+    <script src="../translationEN.json"></script>
 
 </head>
 <body id="page-top">
@@ -34,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger translate" href="#about">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                        <a class="nav-link js-scroll-trigger translate" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#personal">Personal</a>
+                        <a class="nav-link js-scroll-trigger translate" href="#personal">Personal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        <a class="nav-link js-scroll-trigger translate" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -303,7 +307,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading text-white">Extra info</h2>
+                    <h2 class="section-heading text-white">Personal</h2>
                     <hr class="light my-4">
                     <p class="text-faded mb-4">
                         As you could have guessed, there is more to me besides programming and enjoying time with my daughter in the weekends. First of all I'm a very social guy who'd rather go see new things or visiting friends than sitting at home. That's why I loved my time at KAJ Louwel, a local youth club, where I also had a first experience at leadership when I became 18. But since I know that I can't go out and bother my friends every single night, I picked up some hobbies. One of them is reading a good book, especially a thriller with a bit horror mixed into it can make me forget everything around me for a couple of hours. And a nice walk in nature does the opposite for me, taking a little break every 10 minutes to really soak up the enviroment around me can charge my battery faster than anything else! My love for nature extends to all animals big and small (exept for mosquitoes and wasps of course) and it also makes me aware of the fragility of our eco-system so in this line, I try to recycle and reduce my ecological footprint as much as possible. In the end, I guess, I'm a pretty normal person who likes his own things and lets others enjoy theirs but is always open to something new to discover. And as a token of appreciation for taking the time to read what I wrote, I present you one of my favourite qoutes.
@@ -378,18 +382,28 @@
         
         var lang = "EN";
         
-        function translate() {
-            
-            var transButton = document.getElementById("translate");
+        function translator3000(transButton, navList) {
                 
             if(lang == "EN") {
                 transButton.className = "langBtn UK";
                 lang = "NL";
+                
+                //navigation
+                for(i=0; i<navList.length; i++) {
+                    navList[i].innerHTML = translationNL.mainNav[i];
+                }
+                
                 return lang;
             }
             else {
                 transButton.className = "langBtn NL";
                 lang = "EN";
+                
+                //navigation
+                for(i=0; i<navList.length; i++) {
+                    navList[i].innerHTML = translationEN.mainNav[i];
+                }
+                
                 return lang;   
             }
                 
@@ -397,12 +411,15 @@
     
         $(document).ready(function() {
             
-            var navbar = document.getElementById("navContainer");
+            //getting all the elements for translation
+            var navList = document.getElementById("mainNav").getElementsByClassName("translate");
+            
+            var navcon = document.getElementById("navContainer");
             var transButton = document.createElement("div");
             transButton.className = "langBtn NL";
-            transButton.setAttribute("id", "translate");
-            transButton.addEventListener("click", translate);
-            navbar.appendChild(transButton, navbar);
+            transButton.setAttribute("id", "myButton");
+            transButton.addEventListener("click", translator3000.bind(null, transButton, navList));
+            navcon.appendChild(transButton);
             
         });
     

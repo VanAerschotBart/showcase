@@ -1,8 +1,8 @@
-var translationNL = {
+var translationEN = {
     "mainNav": [
-        "Over mij",
-		"Vaardigheden",
-		"Persoonlijk",
+        "About me",
+		"Skills",
+		"Personal",
 		"Contact"
     ],
     "about": {
