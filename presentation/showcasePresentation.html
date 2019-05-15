@@ -384,11 +384,11 @@
         
         var lang = "EN";
         
-        function translate(transButton) {
+        function translate() {
                 
                 if(lang == "EN") {
                     var transButton = document.getElementById("translate");
-                    transButton.setAttribute("style", "background: url(../startbootstrap-creative-gh-pages/img/uk.png); background-size: cover;");
+                    transButton.setAttribute("style", "background-image: url(../startbootstrap-creative-gh-pages/img/uk.png); background-size: 100% 100%;");
                     transButton.innerHTML = "EN";
                     lang = "NL";
                     return lang;
@@ -404,14 +404,12 @@
             var navbar = document.getElementById("mainNav");
             var transButton = document.createElement("button");
             transButton.setAttribute("class", "btn btn-light btn-xs js-scroll-trigger");
-            transButton.setAttribute("style", "background: url(../startbootstrap-creative-gh-pages/img/nl.png); background-size: cover;");
+            transButton.setAttribute("style", "background-image: url(../startbootstrap-creative-gh-pages/img/nl.png); background-size: 100% 100%;");
             transButton.setAttribute("id", "translate");
             transButton.innerHTML = "NL";
             transButton.addEventListener("click", translate);
             navbar.appendChild(transButton, navbar);
             
-            
-            //transButton.setAttribute("style", "background: url(../startbootstrap-creative-gh-pages/img/uk.png); background-size: cover;");
         });
     
     </script>
