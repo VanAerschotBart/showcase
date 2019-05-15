@@ -1,0 +1,17 @@
+.langBtn {
+    height: 2em;
+    width: 3em;
+    margin-left: 8em;
+    border-radius: 1em;
+    border: none;
+    background-size: 100% 100%;
+}
+
+.UK {
+    background-image: url(../img/uk.png);
+    
+}
+
+.NL {
+    background-image: url(../img/nl.png);
+}
