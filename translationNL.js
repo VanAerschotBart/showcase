@@ -15,12 +15,8 @@ var translationNL = [
         "Talen",
         "Coderen",
         "Academisch",
-        "Extra's"
-        /*[
-            "Talen",
-            "Coderen",
-            "Academisch",
-            "Extra's",
+        "Extra's",
+        [
             "Nederlands: moedertaal",
             "Engels: zeer goed",
             "Frans: basis",
@@ -43,7 +39,7 @@ var translationNL = [
             "In bezit van eigen veroer",
             "Gekwalificeerd in EHBO (via Rode Kruis Vlaanderen)",
             "Mijn koffie is serieus goed!"
-        ]*/
+        ]
     ],
     [
         "Persoonlijk",

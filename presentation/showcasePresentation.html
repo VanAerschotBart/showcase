@@ -396,11 +396,11 @@
                     
                     var transList = transConList[a].getElementsByClassName("translate");
                     
-                    for(var b = 0; b<transList.length; b++) {
+                    for(var b = 0; b<translationNL[a].length; b++) {
                         console.log(b);                        
-                        transList[b].innerHTML =  translationNL[a][b];
+                        //transList[b].innerHTML =  translationNL[a][b];
                         
-                        /*if(transConList[a].id == "skills") {
+                        if(translationNL[a][b].isArray) {  //if it's an array, it means we're at the skills list
                             
                             var skillsList = transConList[a].getElementsByTagName("li");
                             
@@ -408,7 +408,10 @@
                                 skillsList[c].innerHTML =  translationNL[a][b][c];
                             }
                             
-                        }*/
+                        }
+                        else{
+                            transList[b].innerHTML =  translationNL[a][b];
+                        }
                     }
                     
                 }
@@ -422,11 +425,11 @@
                     
                     var transList = transConList[a].getElementsByClassName("translate");
                     
-                    for(var b = 0; b<transList.length; b++) {
+                    for(var b = 0; b<translationNL[a].length; b++) {
                         console.log(b);
-                        transList[b].innerHTML =  translationEN[a][b];
+                        //transList[b].innerHTML =  translationEN[a][b];
                         
-                        /*if(transConList[a].id == "skills") {
+                        if(translationNL[a][b].isArray) {
                             
                             var skillsList = transConList[a].getElementsByTagName("li");
                             
@@ -434,7 +437,10 @@
                                 skillsList[c].innerHTML =  translationEN[a][b][c];
                             }
                             
-                        }*/
+                        }
+                        else {
+                            transList[b].innerHTML =  translationEN[a][b];
+                        }
                     }
                     
                 }

@@ -15,12 +15,8 @@ var translationEN = [
         "Languages",
         "Coding",
         "Academic",
-        "Extra's"
-        /*[
-            "Languages",
-            "Coding",
-            "Academic",
-            "Extra's",
+        "Extra's",
+        [
             "Dutch: native language",
             "English: exellent",
             "French: basics",
@@ -43,7 +39,7 @@ var translationEN = [
             "In bezit van eigen veroer",
             "Gekwalificeerd in EHBO (via Rode Kruis Vlaanderen)",
             "Mijn koffie is serieus goed!"
-        ]*/
+        ]
     ],
     [
         "Personal",
