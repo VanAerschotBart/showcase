@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    <section class="p-0 transCon">
+    <section class="p-0">
         <div class="container-fluid p-0">
             <div class="row no-gutters popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -361,7 +361,7 @@
             <p>
                 Van Aerschot Web Development
             <br>
-                2018
+                2019
             </p>
         </div>
     </footer>
@@ -385,32 +385,30 @@
         function translator3000() {
             
             var transButton = document.getElementById("myButton");
-            var transConList = document.getElementsByClassName("transCon");
+            var transConList = document.getElementsByClassName("transCon");  //get every translation container
                 
             if(lang == "EN") {
-                transButton.className = "langBtn UK";
+                transButton.className = "langBtn NL";
                 lang = "NL";
                 
-                //
                 //
                 for(var a=0; a<transConList.length; a++) {
                     
                     var transList = transConList[a].getElementsByClassName("translate");
                     
                     for(var b = 0; b<transList.length; b++) {
+                        console.log(b);                        
+                        transList[b].innerHTML =  translationNL[a][b];
                         
-                        if(translationNL[a][b].isArray) {
+                        /*if(transConList[a].id == "skills") {
                             
-                            for(var c=0; c<translationNL[a][b].length; c++){
-                                skillsList = transList[b].getElementsByTagName("li");
+                            var skillsList = transConList[a].getElementsByTagName("li");
+                            
+                            for(var c=0; c<skillsList.length; c++){
                                 skillsList[c].innerHTML =  translationNL[a][b][c];
                             }
                             
-                        }
-                        else {
-                            transList[b].innerHTML =  translationNL[a][b];
-                        }
-                        
+                        }*/
                     }
                     
                 }
@@ -425,26 +423,24 @@
                     var transList = transConList[a].getElementsByClassName("translate");
                     
                     for(var b = 0; b<transList.length; b++) {
+                        console.log(b);
+                        transList[b].innerHTML =  translationEN[a][b];
                         
-                        if(translationEN[a][b].isArray) {
+                        /*if(transConList[a].id == "skills") {
                             
-                            for(var c=0; c<translationEN[a][b].length; c++){
-                                skillsList = transList[b].getElementsByTagName("li");
+                            var skillsList = transConList[a].getElementsByTagName("li");
+                            
+                            for(var c=0; c<skillsList.length; c++){
                                 skillsList[c].innerHTML =  translationEN[a][b][c];
                             }
                             
-                        }
-                        else {
-                            transList[b].innerHTML =  translationEN[a][b];
-                        }
-                        
+                        }*/
                     }
                     
                 }
-                
             }
             else {
-                console.log("var lang error");
+                alert("var lang error");
             }
                 
         }

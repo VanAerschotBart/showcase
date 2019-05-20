@@ -12,18 +12,18 @@ var translationNL = [
     ],
     [
         "Vaardigheden",
-        [
+        "Talen",
+        "Coderen",
+        "Academisch",
+        "Extra's"
+        /*[
             "Talen",
             "Coderen",
             "Academisch",
-            "Extra's"
-        ],
-        [
+            "Extra's",
             "Nederlands: moedertaal",
             "Engels: zeer goed",
-            "Frans: basis"
-        ],
-        [
+            "Frans: basis",
             "Programmatie-logica",
             "Gegevens-analyse",
             "OOP",
@@ -34,20 +34,16 @@ var translationNL = [
             "PHP7",
             "SCRUM",
             "Bootstrap",
-            "GIT"
-        ],
-        [
+            "GIT",
             "PHP-ontwikkelaar, VDAB Haasrode/Genk (2018-2019)",
             "Web-development, thuis, zelf-studie (2017)",
             "Automechaniek, CTT Genk (2003-2006)",
-            "Lassen/staal-constructies, TISM Bree (2000-2004)"
-        ],
-        [
+            "Lassen/staal-constructies, TISM Bree (2000-2004)",
             "Rijbewijs: B",
             "In bezit van eigen veroer",
             "Gekwalificeerd in EHBO (via Rode Kruis Vlaanderen)",
             "Mijn koffie is serieus goed!"
-        ]
+        ]*/
     ],
     [
         "Persoonlijk",

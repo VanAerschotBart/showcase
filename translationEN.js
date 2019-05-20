@@ -12,18 +12,18 @@ var translationEN = [
     ],
     [
         "Skills",
-        [
+        "Languages",
+        "Coding",
+        "Academic",
+        "Extra's"
+        /*[
             "Languages",
             "Coding",
             "Academic",
-            "Extra's"
-        ],
-        [
+            "Extra's",
             "Dutch: native language",
             "English: exellent",
-            "French: basics"
-        ],
-        [
+            "French: basics",
             "Programmatie-logica",
             "Gegevens-analyse",
             "OOP",
@@ -34,27 +34,23 @@ var translationEN = [
             "PHP7",
             "SCRUM",
             "Bootstrap",
-            "GIT"
-        ],
-        [
+            "GIT",
             "PHP-ontwikkelaar, VDAB Haasrode/Genk (2018-2019)",
             "Web-development, thuis, zelf-studie (2017)",
             "Automechaniek, CTT Genk (2003-2006)",
-            "Lassen/staal-constructies, TISM Bree (2000-2004)"
-        ],
-        [
+            "Lassen/staal-constructies, TISM Bree (2000-2004)",
             "Rijbewijs: B",
             "In bezit van eigen veroer",
             "Gekwalificeerd in EHBO (via Rode Kruis Vlaanderen)",
             "Mijn koffie is serieus goed!"
-        ]
+        ]*/
     ],
     [
-        "Persoonlijk",
-        "Zoals u waarschijnlijk al had kunnen raden, er is meer aan mij dan programmeren en genieten van de tijd met mijn dochter in het weekend. Ten eerste ben ik een zeer sociaal persoon die liever nieuwe dingen verkend of vrienden bezoekt dan thuis te zitten. Dit is waarom ik hield van mijn tijd bij KAJ Louwel, een lokale jeugdvereniging, waar ik ook mijn eerste ervaring met leiderschap heb opgedaan toen ik 18 werd. Maar omdat ik weet dat ik niet elke avond weg kan gaan en mijn vrienden kan lastig vallen, heb ik een paar hobby's opgepikt.	Een van deze is een goed boek lezen, vooral een thriller met een beetje horror er in gemengd kan me alles rondom mij laten vergeten voor een paar uren.	Een fijne wandeling in de natuur doet het tegenovergestelde voor mij, elke 10 minuten een korte pauze nemen om mijn omgeving echt goed op te nemen kan mijn batterij sneller opladen dan wat dan ook! Mijn liefde voor natuur strekt zich ook uit tot alle dieren groot en klein (behalve muggen en wespen natuurlijk) en het maakt me ook bewust van de frigiliteit van ons eco-systeem dus in deze lijn, probeer ik zoveel te recycleren en mijn ecologische voetafdruk zo klein mogelijk te houden als het kan. Op het einde, denk ik, ben ik een redelijk normaal persoon die van zijn eigen dingen houdt en de anderen van hun dingen laat genieten maar altijd open staat om iets nieuws te ontdekken. En als een teken van waardering om uw tijd te nemen om te lezen wat ik geschreven heb, presenteer ik u één van mijn favoriete citaten."
+        "Personal",
+        "As you could have guessed, there is more to me besides programming and enjoying time with my daughter in the weekends. First of all I'm a very social guy who'd rather go see new things or visiting friends than sitting at home. That's why I loved my time at KAJ Louwel, a local youth club, where I also had a first experience at leadership when I became 18. But since I know that I can't go out and bother my friends every single night, I picked up some hobbies. One of them is reading a good book, especially a thriller with a bit horror mixed into it can make me forget everything around me for a couple of hours. And a nice walk in nature does the opposite for me, taking a little break every 10 minutes to really soak up the enviroment around me can charge my battery faster than anything else! My love for nature extends to all animals big and small (exept for mosquitoes and wasps of course) and it also makes me aware of the fragility of our eco-system so in this line, I try to recycle and reduce my ecological footprint as much as possible. In the end, I guess, I'm a pretty normal person who likes his own things and lets others enjoy theirs but is always open to something new to discover. And as a token of appreciation for taking the time to read what I wrote, I present you one of my favourite qoutes."
     ],
     [
-        "Contacteer mij!",
-        "Dank u om alles te lezen tot helemaal hier beneden! Ik hoop dat ik een beetje interessant was. En als u mij en mijn website echt leuk vindt, dan kan u recht onder deze paragraaf een paar manieren vinden om mij te contacteren! Natuurlijk sta ik ook open voor vragen, moest u er nog hebben, dan zal ik meer dan blij zijn om deze te beantwoorden."
+        "Contact me!",
+        "Thank you for reading everything until way down here! I hope I was a bit interesting. And if you really like me and my work, you can find a couple of ways for contacting me right under this paragraph! Of course I'm also open for questions, if you may have any left, I'll be more than glad to answer them."
     ]
 ];
