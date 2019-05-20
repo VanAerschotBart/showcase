@@ -20,8 +20,8 @@ var translationEN = [
             "Dutch: native language",
             "English: exellent",
             "French: basics",
-            "Programmatie-logica",
-            "Gegevens-analyse",
+            "Programming-logics",
+            "Data-analysis",
             "OOP",
             "SQL",
             "HTML5",
@@ -31,14 +31,14 @@ var translationEN = [
             "SCRUM",
             "Bootstrap",
             "GIT",
-            "PHP-ontwikkelaar, VDAB Haasrode/Genk (2018-2019)",
-            "Web-development, thuis, zelf-studie (2017)",
-            "Automechaniek, CTT Genk (2003-2006)",
-            "Lassen/staal-constructies, TISM Bree (2000-2004)",
-            "Rijbewijs: B",
-            "In bezit van eigen veroer",
-            "Gekwalificeerd in EHBO (via Rode Kruis Vlaanderen)",
-            "Mijn koffie is serieus goed!"
+            "PHP-developer at VDAB Haasrode/Genk (2018-2019)",
+            "Web-development at home, self-taught (2017)",
+            "Car mechanics at CTT Genk (2003-2006)",
+            "Welding/steel-construction at TISM Bree (2000-2004)",
+            "Drivers-licence: B",
+            "In posession of own vehicle",
+            "Qualified in first aid (via Rode Kruis Vlaanderen)",
+            "My coffee is pretty damn good!"
         ]
     ],
     [
