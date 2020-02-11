@@ -26,7 +26,7 @@ ABOUT
 
 		As you may have noticed above, my name is Van Aerschot Bart, and I'm a recently graduated web-developer. 
 		As I'm just starting my professional carreer in this branche, you have probably never heard of me before. 
-		Well, here's a chance to change that! A short introduction: I'm 35 years old, father to an 8 year old daughter (my pride and joy!), living in Opglabbeek, Limburg. 
+		Well, here's a chance to change that! A short introduction: I'm 36 years old, father to an 8 year old daughter (my pride and joy!), living in Opglabbeek, Limburg. 
 		My main language in programming is PHP, but I also have a little crush on JavaScript. 
 		To be honest, I enjoy almost every aspect of building a website in it's full, and when my knowledge of a programming language is a little short, I see it as a challenge and an opportunity to learn! 
 		I master most of what I need to know to create a beautiful fully-working website but I'm looking for a company who wants to help me fine-tune and upgrade my skills. 
